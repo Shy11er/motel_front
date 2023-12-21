@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* background: linear-gradient(90deg, #8dcafc, #4badfd); */
+  background: #161b22;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+h1,
+p {
+  font-family: "Montserrat";
+}
