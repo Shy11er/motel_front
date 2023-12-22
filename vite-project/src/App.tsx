@@ -4,6 +4,7 @@ import { RouterProvider, createBrowserRouter, Outlet } from "react-router-dom";
 import Guest from "./pages/guest/Guest";
 import Layout from "./Layout";
 import Motel from "./pages/Motel/Motel";
+import Request from "./pages/Request/Request";
 
 const router = createBrowserRouter([
   {
@@ -19,6 +20,14 @@ const router = createBrowserRouter([
     element: (
       <Layout>
         <Guest />
+      </Layout>
+    ),
+  },
+  {
+    path: "/request",
+    element: (
+      <Layout>
+        <Request />
       </Layout>
     ),
   },

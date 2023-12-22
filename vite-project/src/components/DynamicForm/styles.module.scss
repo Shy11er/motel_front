@@ -103,7 +103,6 @@ $width: 300px;
         &:focus {
           border-bottom: 2px solid $secondary-color;
           outline: none;
-          // border-bottom: 2px solid $main-color;
           transition: 0s ease;
 
           ~ label {
@@ -111,10 +110,6 @@ $width: 300px;
             font: 700 calc($width/20) "Raleway";
             color: $secondary-color;
           }
-
-          // ~ .bar:before {
-          //     transform: translateX(0);
-          // }
         }
 
         &:-webkit-autofill {
