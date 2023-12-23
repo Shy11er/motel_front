@@ -6,6 +6,7 @@ import Layout from "./Layout";
 import Motel from "./pages/Motel/Motel";
 import Request from "./pages/Request/Request";
 import Room from "./pages/Rooms/Room";
+import Simulation from "./pages/Simulation/Simulation";
 
 const router = createBrowserRouter([
   {
@@ -44,7 +45,7 @@ const router = createBrowserRouter([
     path: "/simulation",
     element: (
       <Layout>
-        <Room />
+        <Simulation />
       </Layout>
     ),
   },

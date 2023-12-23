@@ -37,10 +37,10 @@ const features = [
 interface tableDto {
   feature: string;
   id: number;
-  // price: string;
+  daysToLive: number;
   roomType: string;
   status: string;
-  payImmediatle: Boolean;
+  payImmediatle: boolean;
   roomNumber: number;
   roomCount: number;
   requestType: string;
@@ -152,7 +152,14 @@ const RequestForm: React.FC<DynamicFormProps> = ({ form }) => {
   return (
     <div className={styles.main}>
       {form === "get-all" ? (
-        <>
+        <div
+          style={{
+            width: "100%",
+            display: "flex",
+            alignItems: "center",
+            flexDirection: "column",
+          }}
+        >
           <h1>Список заявок</h1>
           <table className={styles.table}>
             <thead>
@@ -164,6 +171,9 @@ const RequestForm: React.FC<DynamicFormProps> = ({ form }) => {
                 <th>Тип заявки</th>
                 <th>Оплачен</th>
                 <th>Кол-во номеров</th>
+                <th>Кол-во комнат</th>
+                <th>На сколько дней</th>
+                <th>Статус</th>
                 <th>Чек</th>
               </tr>
             </thead>
@@ -180,14 +190,23 @@ const RequestForm: React.FC<DynamicFormProps> = ({ form }) => {
                       : "Заселение"}
                   </td>
                   <td>{data.payImmediatle === false ? "Нет" : "Да"}</td>
-                  <td>{data.roomNumber === 0 ? 1 : roomNumber}</td>
-                  <td>{data.amountPrice} руб.</td>
+                  <td>
+                    {data.requestType === "Booking" ? data.roomNumber : 1}
+                  </td>
+                  <td>{data.roomCount}</td>
+                  <td>{data.daysToLive}</td>
+                  <td>{data.status}</td>
+                  <td>
+                    {data.amountPrice === null
+                      ? "-"
+                      : `${data.amountPrice} руб.`}
+                  </td>
                 </tr>
               ))}
             </tbody>
           </table>
           <button onClick={() => setButtonClicked(true)}>Обновить</button>
-        </>
+        </div>
       ) : (
         <form onSubmit={(ev) => handleSubmit(ev)}>
           <div className={styles.navbar}>
