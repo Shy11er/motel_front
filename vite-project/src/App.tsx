@@ -5,6 +5,7 @@ import Guest from "./pages/guest/Guest";
 import Layout from "./Layout";
 import Motel from "./pages/Motel/Motel";
 import Request from "./pages/Request/Request";
+import Room from "./pages/Rooms/Room";
 
 const router = createBrowserRouter([
   {
@@ -28,6 +29,22 @@ const router = createBrowserRouter([
     element: (
       <Layout>
         <Request />
+      </Layout>
+    ),
+  },
+  {
+    path: "/room",
+    element: (
+      <Layout>
+        <Room />
+      </Layout>
+    ),
+  },
+  {
+    path: "/simulation",
+    element: (
+      <Layout>
+        <Room />
       </Layout>
     ),
   },

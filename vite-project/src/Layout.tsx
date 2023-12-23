@@ -7,9 +7,9 @@ interface LayoutProps {
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
-    <div>
+    <div style={{ width: "100%", height: "100%", flexWrap: "nowrap" }}>
       <Navbar />
-      <div style={{ width: "100%", height: "100%", padding: "20px" }}>
+      <div style={{ width: "100%", height: "auto", padding: "20px", flexWrap: "nowrap" }}>
         {children}
       </div>
     </div>

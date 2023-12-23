@@ -15,7 +15,6 @@ const Guest: React.FC = () => {
         <button onClick={() => showForm("showAll")}>Показать Всех</button>
         <button onClick={() => showForm("create")}>Создать</button>
         <button onClick={() => showForm("delete")}>Удалить</button>
-        <button onClick={() => showForm("update")}>Обновить</button>
       </div>
 
       <div className={styles.main}>

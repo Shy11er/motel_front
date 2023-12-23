@@ -15,43 +15,43 @@ $width: 300px;
     font-size: 40px;
   }
 
-  & > table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
+  // & > table {
+  //   width: 100%;
+  //   border-collapse: collapse;
+  //   margin-top: 20px;
 
-    tr {
-      display: flex;
-      width: 100%;
-      flex-direction: row;
-    }
+  //   tr {
+  //     display: flex;
+  //     width: 100%;
+  //     flex-direction: row;
+  //   }
 
-    th,
-    td {
-      padding: 12px;
-      border: 1px solid #01b075;
-      text-align: center;
-      display: block;
-      margin: 0 1px;
-      width: 100%;
-      margin-bottom: 1px;
-      box-sizing: border-box;
-      color: #fff;
-    }
+  //   th,
+  //   td {
+  //     padding: 12px;
+  //     border: 1px solid #01b075;
+  //     text-align: center;
+  //     display: block;
+  //     margin: 0 1px;
+  //     width: 100%;
+  //     margin-bottom: 1px;
+  //     box-sizing: border-box;
+  //     color: #fff;
+  //   }
 
-    th {
-      background-color: #01b075;
-      color: #fff;
-    }
+  //   th {
+  //     background-color: #01b075;
+  //     color: #fff;
+  //   }
 
-    tr:nth-child(even) {
-      background-color: #f9f9f9;
-    }
+  //   tr:nth-child(even) {
+  //     background-color: #f9f9f9;
+  //   }
 
-    tr:hover {
-      background-color: #000000;
-    }
-  }
+  //   tr:hover {
+  //     background-color: #000000;
+  //   }
+  // }
 
   & > form {
     background-color: #1f2630;

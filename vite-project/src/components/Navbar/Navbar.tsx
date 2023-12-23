@@ -5,9 +5,9 @@ import { Link } from "react-router-dom";
 const nav_items = [
   { title: "Гость", to: "/guest" },
   { title: "Заявка", to: "/request" },
-  { title: "Отель", to: "/" },
-  { title: "Симуляция", to: "/" },
-  { title: "что то", to: "/" },
+  { title: "Отель Элеон", to: "/" },
+  { title: "Симуляция", to: "/simulation" },
+  { title: "Комнаты", to: "/room" },
 ];
 
 const Navbar: React.FC = () => {
