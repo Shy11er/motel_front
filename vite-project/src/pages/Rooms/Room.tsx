@@ -34,7 +34,7 @@ const Room: React.FC = () => {
 
   return (
     <div className={styles.main}>
-      <h1>Список комнат отеля Элеон</h1>
+      <h1>Список комнат гостиницы Элеон</h1>
       <table className={styles.table}>
         <thead>
           <tr>

@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const nav_items = [
   { title: "Гость", to: "/guest" },
   { title: "Заявка", to: "/request" },
-  { title: "Отель Элеон", to: "/" },
+  { title: "Гостиница Элеон", to: "/" },
   { title: "Симуляция", to: "/simulation" },
   { title: "Комнаты", to: "/room" },
 ];
