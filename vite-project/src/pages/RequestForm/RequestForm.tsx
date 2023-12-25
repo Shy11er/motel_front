@@ -45,6 +45,7 @@ interface tableDto {
   roomCount: number;
   requestType: string;
   amountPrice: number;
+  arrival: string;
 }
 
 const RequestForm: React.FC<DynamicFormProps> = ({ form }) => {
@@ -173,6 +174,7 @@ const RequestForm: React.FC<DynamicFormProps> = ({ form }) => {
                 <th>Кол-во номеров</th>
                 <th>Кол-во комнат</th>
                 <th>На сколько дней</th>
+                <th>Дата</th>
                 <th>Статус</th>
                 <th>Чек</th>
               </tr>
@@ -195,6 +197,7 @@ const RequestForm: React.FC<DynamicFormProps> = ({ form }) => {
                   </td>
                   <td>{data.roomCount}</td>
                   <td>{data.daysToLive}</td>
+                  <td>{data.arrival.replace("T", " ")}</td>
                   <td>{data.status}</td>
                   <td>
                     {data.amountPrice === null
